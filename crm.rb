@@ -1,7 +1,6 @@
 require_relative 'rolodex'
 require_relative 'contact'
 require 'sinatra'
-require 'pry'
 
 $rolodex = Rolodex.new
 
