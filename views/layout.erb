@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+  <link rel="stylesheet" type="text/css" href="/style.css">
   </head>
   <body>
-  	<%= yield %>
+  	
   	
   	<header>
   		
   	</header>
+	<main>
+  		<%= yield %>
+  	</main>
   	
   	<nav>
-  		
+  		<ul class="left_nav">
+  			<li><a class ="nav_link" href="/contacts">View contacts</a></li>
+			<li><a class ="nav_link" href="/contacts/new">Add contact</a></li>
+			<li><a class ="nav_link" href="/contacts/modify">Modify contact</a></li>
+			<li><a class ="nav_link" href="/contacts/remove">Remove contact</a></li>
+  		</ul>
   	</nav>
 
   	<footer>
