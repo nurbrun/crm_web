@@ -3,13 +3,13 @@ class Rolodex
 
 	def initialize
 		@contacts = []
-		@id = 1000
+		@id_index = 1000
 	end
 
 	def add_contact (contact)
-		contact.id = @id
+		contact.id = @id_index
 		@contacts << contact
-		@id += 1
+		@id_index += 1
 	end
 
 	def find(contact_id)
