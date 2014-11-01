@@ -2,7 +2,8 @@
 <%# binding.pry %>
 
 <ul>
-<% $rolodex.contacts.each do |contact| %>
-	<a href="/contacts/<%= contact.id%>"><li><%= contact.first_name %> <%= contact.last_name %> <%= contact.email %> <%= contact.note %> <%= contact.id %></li></a>
+	<% @contacts.each do |contact| %>
+
+	<li><a href="/contacts/<%= contact.id %>"><%= contact.first_name %> <%= contact.last_name %> <%= contact.note %> <%= contact.id %> </a></li>
 	<% end %>
 </ul>
