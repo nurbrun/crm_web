@@ -64,9 +64,14 @@ put "/contacts/:id" do
 	if @contact
 		@contact.update(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], note: params[:note])
 
+		# can be done either way
+		# @contact.update(:first_name => params[:first_name])
+		# @contact.update(:last_name => params[:last_name])
+		# @contact.update(:email => params[:email])
+		# @contact.update(:note => params[:note]) 
 
 		redirect to("/contacts")
-	else
+	elsec
 		raise Sinata::NotFound
 	end
 end
